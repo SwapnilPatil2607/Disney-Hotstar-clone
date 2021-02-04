@@ -1,10 +1,10 @@
-import React from "react"
-
-function Home(){
-    return(
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
+import React from "react";
+// import Hero from "./Home/Hero";
+function Home() {
+  return (
+    <div>
+      {/* <Hero /> */}
+    </div>
+  );
 }
-export default Home
+export default Home;

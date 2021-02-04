@@ -18,7 +18,7 @@ console.log(movies)
           <img src={Searchicon} alt="search" />
           <div className={Styles.info}>
                {movies && movies.map((item)=>{
-                   return <div key={item.id} className={Styles.searchedcard}><img src={item.backdrop_path?`https://image.tmdb.org/t/p/w200${item.backdrop_path}`:"https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"} alt="Disney +" /><div> <h2>{item.original_title}</h2> <p>Release Date: {item.release_date}</p></div> </div>
+                   return <div key={item.id} className={Styles.searchedcard}><img src={item.backdrop_path?`https://image.tmdb.org/t/p/w200${item.backdrop_path}`:"https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"} alt="Disney +" /><div> <h5>{item.original_title}</h5> <p>Release Date: {item.release_date}</p></div> </div>
                })}
             </div>
         </div>

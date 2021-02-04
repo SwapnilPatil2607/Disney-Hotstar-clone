@@ -20,7 +20,7 @@ function Login() {
   return (
     <div>
       {user ? (
-        <div onClick={() => setvisibility("block")} style={{ display: "flex" }}>
+        <div onClick={() => setvisibility("block")} style={{ display: "flex",alignItems:"center" }}>
           <img className={Styles.Dp} src={user[0].profile_picture} alt="(DP)" />
           <p>{user[0].user}</p>
         </div>
@@ -60,8 +60,8 @@ function Login() {
                 className={Styles.login_submit}
               />
             </form>
-            {error && <h3  style={{color:"#d63031"}}>Username or Password Incorrect</h3>}
-            {loading && <h3>Loading...</h3>}
+            {error && <h4  style={{color:"#d63031"}}>Username or Password Incorrect</h4>}
+            {loading && <h4>Loading...</h4>}
           </div>
         ) : (
           <div>

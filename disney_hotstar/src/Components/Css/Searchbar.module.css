@@ -26,13 +26,13 @@
   background-color: #0d121d;
   display: none;
   top: 105%;
-  font-size: 10px;
   overflow-y: scroll;
   max-height: 400px;
   min-height: auto;
 }
 .input:focus + img + div.info {
   display: block;
+  z-index: 100;
 }
 .searchedcard {
   display: flex;
@@ -41,8 +41,17 @@
   margin: 5px;
   border-radius: 5px;
   background-color: #2a3a58;
+  height: 80px;
+  text-align: center;
+}
+.searchedcard h5{
+  font-size: 15px;
+}
+.searchedcard p{
+  font-size: 10px;
 }
 .searchedcard img {
-  max-width: 150px;
+  max-width: 10px;
+  max-width: 130px;
   border-right: 1px solid black;
 }

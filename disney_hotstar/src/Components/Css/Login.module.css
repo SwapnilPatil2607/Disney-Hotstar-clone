@@ -4,18 +4,19 @@
   position: absolute;
   top: 20%;
   left:30%;
-  height: 300px;
+  height: 380px;
   width: 500px;
   min-height: auto;
   min-width: auto;
   border-radius: 3px;
   padding: 40px 10px;
-  
+  z-index: 100;
   }
+  
   .login_inputs{
     border:none;
     outline: none;
-    border-bottom:2px solid #8aa1ff;
+    border-bottom:2px solid white;
     width: 400px;
     padding: 10px;
     min-width: auto;
@@ -38,6 +39,7 @@
   color:white;
   border-radius:2px;
   outline:none;
+  margin: 10px;
   }
   .login_submit:hover{
   box-shadow: 1px 1px 3px black;
@@ -53,6 +55,7 @@
   border-radius: 50%;
   padding: 5px;
   border:1px solid #0984e3;
+  margin: 10px;
   }
   .profile_picture:hover{
     transition: 600ms;
