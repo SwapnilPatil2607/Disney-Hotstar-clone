@@ -6,6 +6,7 @@
   border: none;
   padding: 5px 20px;
   font-family: "Nunito Sans", sans-serif;
+  color: white;
 }
 .input:focus {
   outline: none;
@@ -13,7 +14,7 @@
   transition: 600ms;
 }
 .search_container {
-  margin: 10px 10px 10px 140px ;
+  margin: 10px 10px 10px 140px;
   border-bottom: 1px solid #1e3799;
   position: relative;
 }
@@ -21,25 +22,27 @@
   opacity: 0.6;
 }
 .info {
-    position: absolute;
-    background-color: #0d121d;
-    display: none;
-    top:105%;
-    font-size: 10px;
+  position: absolute;
+  background-color: #0d121d;
+  display: none;
+  top: 105%;
+  font-size: 10px;
+  overflow-y: scroll;
+  max-height: 400px;
+  min-height: auto;
 }
-.input:focus + img + div.info  {
-    display: block
+.input:focus + img + div.info {
+  display: block;
 }
-.searchedcard{
-display:flex;
-color:white;
-border: 1px solid #2a3a58;
-margin:5px;
-border-radius: 5px;
-background-color: #2a3a58;
+.searchedcard {
+  display: flex;
+  color: white;
+  border: 1px solid #2a3a58;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #2a3a58;
 }
 .searchedcard img {
-max-width: 150px;
-border-right: 1px solid black;
+  max-width: 150px;
+  border-right: 1px solid black;
 }
-

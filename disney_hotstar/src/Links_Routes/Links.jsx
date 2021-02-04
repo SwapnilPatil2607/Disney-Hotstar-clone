@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 import Styles from "./Links.module.css";
 import Search from "../Components/Searchbar";
 import Login from "../Components/Login";
+import TV from "../Components/TV"
 export const Link_data = [
-  { to: "/tv", title: "TV" },
+  { to: "/tv", title: "TV",render:<TV/> },
   { to: "/movies", title: "Movies" },
   { to: "/sports", title: "Sports" },
   { to: "/news", title: "News" },
@@ -20,7 +21,7 @@ export const Links = () => {
         })}
       </div>
       <div>
-        <NavLink exact to="/">
+        <NavLink key="Home" exact to="/">
           <img
             className={Styles.logo}
             src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
