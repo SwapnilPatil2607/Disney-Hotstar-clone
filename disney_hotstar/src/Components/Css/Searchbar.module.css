@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,600&display=swap");
+
+.input {
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 20px;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+.input:focus {
+  outline: none;
+  padding: 5px 60px;
+  transition: 600ms;
+}
+.search_container {
+  margin: 10px 10px 10px 140px;
+  border-bottom: 1px solid #1e3799;
+  position: relative;
+}
+.search_container img {
+  opacity: 0.6;
+}
+.info {
+  position: absolute;
+  background-color: #0d121d;
+  display: none;
+  top: 105%;
+  overflow-y: scroll;
+  max-height: 400px;
+  min-height: auto;
+}
+.input:focus + img + div.info {
+  display: block;
+  z-index: 100;
+}
+.searchedcard {
+  display: flex;
+  color: white;
+  border: 1px solid #2a3a58;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #2a3a58;
+  height: 80px;
+  text-align: center;
+}
+.searchedcard h5{
+  font-size: 15px;
+}
+.searchedcard p{
+  font-size: 10px;
+}
+.searchedcard img {
+  max-width: 10px;
+  max-width: 130px;
+  border-right: 1px solid black;
+}

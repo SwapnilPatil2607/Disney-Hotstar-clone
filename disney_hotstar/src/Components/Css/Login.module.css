@@ -1,0 +1,70 @@
+.login_modal{
+    box-shadow: 1px 3px 3px black;
+  background-color:#1c2940;
+  position: absolute;
+  top: 20%;
+  left:30%;
+  height: 380px;
+  width: 500px;
+  min-height: auto;
+  min-width: auto;
+  border-radius: 3px;
+  padding: 40px 10px;
+  z-index: 100;
+  }
+  
+  .login_inputs{
+    border:none;
+    outline: none;
+    border-bottom:2px solid white;
+    width: 400px;
+    padding: 10px;
+    min-width: auto;
+    background-color:transparent;
+    margin: 20px auto;
+    font-size: 16px;
+  color:white
+  }
+  .login_inputs:focus {
+    border-bottom:2px solid #0984e3;
+    transition: 600ms;
+  }
+  .login_submit{
+  background-color: #0984e3;
+  min-width: auto;
+  width: 430px;
+  padding: 15px 0px;
+  border:none;
+  font-size: 16px;
+  color:white;
+  border-radius:2px;
+  outline:none;
+  margin: 10px;
+  }
+  .login_submit:hover{
+  box-shadow: 1px 1px 3px black;
+  }
+  .cancel{
+    position: absolute;
+    height: 20px;
+    top:12px;
+    right: 12px;
+  }
+  .profile_picture{
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  border:1px solid #0984e3;
+  margin: 10px;
+  }
+  .profile_picture:hover{
+    transition: 600ms;
+    box-shadow: 1px 1px 10px 4px #0f8dec;
+  }
+  .Dp{
+    height: 30px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #0984e3;
+    margin: 10px;
+  }
