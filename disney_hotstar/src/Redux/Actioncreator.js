@@ -7,20 +7,20 @@ import {
 import {
   Hero_Show_Request,
   Hero_Show_Success,
-  Hero_Show_Failure
+  Hero_Show_Failure,
 } from "./Actiontype";
 
 import {
   Search_Movies_Request,
   Search_Movies_Success,
-  Search_Movies_Failure
+  Search_Movies_Failure,
 } from "./Actiontype";
 
 import {
-  Watch_Later_Request ,
-Watch_Later_Success ,
-Watch_Later_Failure ,
-} from "./Actiontype"; 
+  Watch_Later_Request,
+  Watch_Later_Success,
+  Watch_Later_Failure,
+} from "./Actiontype";
 
 import { Log_Out } from "./Actiontype";
 import axios from "axios";
@@ -79,7 +79,6 @@ export const search_movies = (query) => (dispatch) => {
     .catch((err) => dispatch(search_movies_failure()));
 };
 
-
 // <--- Hero Carousel Shows --->
 
 export const hero_show_request = () => ({
@@ -87,44 +86,44 @@ export const hero_show_request = () => ({
 });
 export const hero_show_failure = () => ({
   type: Hero_Show_Failure,
-
 });
 export const hero_show_success = (payload) => ({
   type: Hero_Show_Success,
-  payload
+  payload,
 });
 export const hero_movies = () => (dispatch) => {
   dispatch(hero_show_request());
   return axios({
-    method:"get",
-    url:"https://api.themoviedb.org/3/movie/upcoming?api_key=94592a9226293d3b0d881a324bc52598&language=en-US&page=1"
-}).then((res) => dispatch(hero_show_success(res.data.results))).catch((err) => dispatch(hero_show_failure()));
+    method: "get",
+    url:
+      "https://api.themoviedb.org/3/movie/upcoming?api_key=94592a9226293d3b0d881a324bc52598&language=en-US&page=1",
+  })
+    .then((res) => dispatch(hero_show_success(res.data.results)))
+    .catch((err) => dispatch(hero_show_failure()));
 };
-
 
 // <--- Watch_Later --->
 
 export const watch_later_request = () => ({
-  type:Watch_Later_Request,
+  type: Watch_Later_Request,
 });
 export const watch_later_failure = () => ({
   type: Watch_Later_Failure,
-
 });
 export const watch_later_success = (payload) => ({
   type: Watch_Later_Success,
-  payload
+  payload,
 });
-export const watch_later = ({userdata,showId,data_later}) => (dispatch) => {
-      
+export const watch_later = ({ userdata, showId, data_later }) => (dispatch) => {
   dispatch(watch_later_request());
-  return  axios({
-    method:"Patch",
-    url:`https://usersauth.herokuapp.com/users/${userdata[0].id}`,
-    data:{
+  return axios({
+    method: "Patch",
+    url: `https://usersauth.herokuapp.com/users/${userdata[0].id}`,
+    data: {
       ...userdata[0],
-      watch_later_shows:[...data_later,showId]
-    }
-}).then(res => dispatch(watch_later_success(res.data.watch_later_shows))).catch((err) => dispatch(watch_later_failure()));
+      watch_later_shows: [...data_later, showId],
+    },
+  })
+    .then((res) => dispatch(watch_later_success(res.data.watch_later_shows)))
+    .catch((err) => dispatch(watch_later_failure()));
 };
-
