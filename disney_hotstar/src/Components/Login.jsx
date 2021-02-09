@@ -16,7 +16,6 @@ function Login() {
     e.preventDefault();
     dispath(get_users(data)).then(setusername(""), setpassword(""));
   };
-  console.log(user);
   return (
     <div>
       {user ? (

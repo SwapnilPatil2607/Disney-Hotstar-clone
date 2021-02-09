@@ -42,13 +42,17 @@
   border-radius: 5px;
   background-color: #2a3a58;
   height: 80px;
-  text-align: center;
+  text-align:left;
+  
 }
 .searchedcard h5{
   font-size: 15px;
+  margin: 10px 0px 0px 8px;
 }
 .searchedcard p{
   font-size: 10px;
+  margin: 10px 0px 0px 8px;
+
 }
 .searchedcard img {
   max-width: 10px;

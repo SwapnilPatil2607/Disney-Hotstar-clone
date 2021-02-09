@@ -7,7 +7,7 @@ function Routes(){
         return (
             <div>
                 <Links/>
-                <Route exact path="/" render={()=><Home/>} />
+                <Route exact key="Home" path="/" render={()=><Home/>} />
                 {Link_data.map((item)=>{
                    return <Route key={item.to} path={item.to} render={()=>item.render}></Route>
                 })}
