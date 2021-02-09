@@ -1,0 +1,114 @@
+.container{
+    color:white;
+    text-align: left;
+}
+
+.card{
+    position: relative;
+    height: 220px;
+    width: 160px;
+    border-radius: 6px;
+    margin:30px 10px;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.card:hover{
+    transition: 600ms;
+    transform: scale(1.1);
+}
+.cardInfo{
+    position:absolute;
+    display: none;
+    background: rgb(28,41,64);
+    background: linear-gradient(0deg, rgba(28,41,64,1) 19%, rgba(15,22,33,1) 80%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
+    border-radius: 6px;
+    padding: 0px 10px;
+    bottom: 0%;
+    left:0; 
+}
+.card:hover .cardInfo{
+    display: block;
+}
+.title{
+    font-size: 15px;
+}
+.desc{
+    font-size: 10px;
+    overflow: hidden;
+    height: 60px;
+}
+.cardbutton{
+    width: 90%;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin: 10px;
+}
+.cardbutton:hover{
+    background-color:#334569 ;
+}
+
+.list{
+    display: flex;
+    width: 300%;
+}
+.overflow{
+    overflow-y:hidden;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+
+.watchListcard{
+    position: relative;
+    height: 170px;
+    width: 300px;
+    border-radius: 6px;
+    margin:30px 10px;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.watchListcard:hover{
+    transition: 300ms;
+    transform: scale(1.1);
+}
+.watchListcardInfo{
+    position:absolute;
+    display: none;
+    background: rgb(28,41,64);
+    background: linear-gradient(0deg, rgba(28,41,64,1) 19%, rgba(15,22,33,1) 46%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
+    border-radius: 6px;
+    padding: 0px 10px;
+    bottom: 0%;
+    left:0; 
+}
+.watchListcard:hover .watchListcardInfo{
+    display: block;
+}
+.watchListbutton{
+    width: 90%;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin: 10px 10px;
+}
+.watchListbutton:hover{
+    background-color:#334569 ;
+}
+.WLtitle{
+    font-size: 15px;
+}
+.WLdesc{
+    font-size: 10px;
+    overflow: hidden;
+    height: 60px;
+}

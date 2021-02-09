@@ -9,8 +9,7 @@ function Search(){
     const movies=useSelector(state=>state.search.Searched_movies)
     useEffect(()=>{
            dispatch(search_movies(query))
-    },[query])
-console.log(movies)
+    },[query,dispatch])
     return(
         <div>
         <div className={Styles.search_container}>

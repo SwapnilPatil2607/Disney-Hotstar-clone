@@ -16,7 +16,7 @@ export const reducer = (state = initstate, { type, payload }) => {
       case Log_Out:
           return{
               user:false
-          }
+           }
     case Get_Users_Request:
       return {
         ...state,
@@ -38,7 +38,6 @@ export const reducer = (state = initstate, { type, payload }) => {
         login_error:true,
         login_Loading: false,
       };
-
     default:
       return state;
   }
